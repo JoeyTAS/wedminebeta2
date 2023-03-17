@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+}
+
+.parallax-container {
+    height: 430px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .parallax-bg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    transform: translate3d(0,0,0);
+    z-index: -1;
+  }
+  
+  .parallax-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+  }
+
+  @font-face {
+    font-family: 'Minecraft';
+    src: url('Minecraft.ttf');
+}
+p {
+    font-family: Minecraft;
+    font-size: 30px;
+    color: #f6f6f6;
+    text-shadow: 2px 2px #000000;
+}
+.tm{
+    font-size: 50px;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Estilos para dispositivos pequeños */
+  @media (max-width: 767px) {
+    body {
+      font-size: 14px;
+    }
+  }
+  
+  /* Estilos para dispositivos medianos */
+  @media (min-width: 768px) and (max-width: 991px) {
+    body {
+      font-size: 16px;
+    }
+  }
+  
+  /* Estilos para dispositivos grandes */
+  @media (min-width: 992px) {
+    body {
+      font-size: 18px;
+    }
+  }
+  

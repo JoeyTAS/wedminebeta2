@@ -1,0 +1,67 @@
+
+.contenedor-boton {
+    text-align: center;
+  }
+  
+
+  .boton-descarga {
+    display: inline-block;
+    position: relative;
+    border-radius: 50px;
+    overflow: hidden;
+    padding: 12px 24px;
+    background-color: #212324;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .boton-descarga:hover {
+    background-color: #1976d2;
+    transform: translateY(-5px);
+  }
+  
+  .icono {
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .icono::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    border: 3px solid #fff;
+    border-top: none;
+    border-right: none;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  
+  .boton-descarga:hover .icono {
+    transform: rotate(360deg);
+  }
+  
+  .texto {
+    display: inline-block;
+    position: relative;
+    transform: translateX(0);
+    transition: all 0.3s ease-in-out;
+    
+  }
+  
+  .boton-descarga:hover .texto {
+    transform: translateX(10px);
+  }
+  
+  

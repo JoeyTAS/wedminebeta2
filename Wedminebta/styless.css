@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    background-color: rgb(172, 172, 172);
+}
+
+section{padding: 30px 15%;}
+
+@media (width <= 720px) {
+    section { padding: 38px 10%;}
+}
+
+.banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    min-height: 40vh;
+    margin-bottom: 40px;
+
+}
+
+@media (width <= 620px) {
+    .banner{
+        text-align: center;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    
+}
+.banner::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 100%; /*********/
+    height: 110%;
+    /*rotate: -2deg;*/
+    background: #0a0a0a;
+
+}
+.banner h2{
+    white-space: nowrap;
+    margin: 0 0 4px;
+    font-size: 100px;
+    color: rgb(255 255 255 / 96%);
+}
+.banner h3{
+    font-weight: 400;
+    margin: 0;
+    font-size: 30px;
+    color: rgb(255 255 255 / 57%);
+}
+@keyframes morph {
+       0%,
+       100%{
+           border-radius: 
+           40% 60% 70% 30% /
+           40% 40% 60% 50%;
+       }
+       34%{
+           border-radius: 
+           70% 30% 50% 50% /
+           30% 30% 70% 70%;
+       }
+       67%{
+           border-radius: 
+           100% 60% 60% 100% /
+           100% 100% 60% 60%;
+       }
+}
+
+.banner img {
+    width: 300px;
+    height: 320px;
+    object-fit: cover;
+    animation: morph 3.5s linear infinite;
+}
+
+.foro h2{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.foro p{
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+}
+
